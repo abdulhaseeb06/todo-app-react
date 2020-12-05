@@ -7,7 +7,7 @@ import store from "./store";
 export default function App() {
   return (
     <Provider store={store}>
-      <div className="ui raised very padded text container segment grid horizontally">
+      <div className="ui raised very padded container segment grid horizontally">
         <h2 className="ui header">
           <div className="content">
             <i className="tasks icon icon-green"></i>Todo Manager

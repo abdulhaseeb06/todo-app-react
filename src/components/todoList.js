@@ -11,7 +11,9 @@ export default function TodoList() {
         <div className="ui divided list">
           <div className="item">
             <div className="right floated content">
-              <i className="check square outline icon icon-green"></i>
+              <button className="ui button positive">
+                <i className="check icon"></i> Mark Complete
+              </button>
             </div>
             <div className="content">ToDo</div>
           </div>
@@ -25,7 +27,10 @@ export default function TodoList() {
         <div className="ui divided list">
           <div className="item">
             <div className="right floated content">
-              <i className="check square outline icon"></i>
+              <button className="ui button red">
+                <i className="arrow up icon"></i>
+                Mark Pending
+              </button>
             </div>
             <div className="content">ToDo</div>
           </div>
