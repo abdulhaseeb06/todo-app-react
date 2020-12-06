@@ -19,9 +19,12 @@ export default function TodoList() {
     dispatch(markTodoPending({ id: obj[0].id, title: obj[0].title }));
   };
 
-  useEffect(function () {
-    dispatch(getTodos());
-  }, []);
+  useEffect(
+    function () {
+      dispatch(getTodos());
+    },
+    [dispatch]
+  );
 
   const completedTodoListHandler = () => {
     if (state.completed.length === 0) {
