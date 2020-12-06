@@ -31,6 +31,7 @@ const TodoReducer = (state = initialState, { type, payload }) => {
           ),
         ],
       };
+
     case "MARK_PENDING":
       return {
         ...state,
